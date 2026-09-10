@@ -47,4 +47,4 @@
 | 43 | **辉辉云 API** | 🌐 高速直连 | `国内高速` `云边协同` `国内直连` | 国内高速直连超低延迟，注册送免费额度 | [前往注册](https://api.huihuiyun.top/register?aff=MR452T4ETRCC) |
 | 44 | **AnyModel** | 🌟 精选爆款 | `全模型对比` `开源闭源齐聚` `Web免配置` | 全球顶模横向对比，免翻直连，注册享比对 | [前往注册](https://anymodel.org/?ref=UQZSWQY) |
 | 45 | **XXS API (小学生)** | ⚡ API中转 | `NewAPI` `轻量快速` `超低费率` | 轻量高性价比 NewAPI，注册送初始额度 | [前往注册](https://xxs.l.cd/sign-up?aff=yrJv) |
-| 46 | **0168 AI** | 🌐 高速直连 | `多模型聚合` `国内直连` `综合工作台` | 综合大模型聚合服务，国内高速直连，注册送礼包 | [前往注册](https://0168.cn/recommend/J6U7hMQmuTVF) |
+| 46 | **0168云 (免费服务器)** | 🌟 精选爆款 | `免费云服务器` `送1个月` `算力部署` | 注册即可免费体验 1 个月云服务器 | [前往注册](https://0168.cn/recommend/J6U7hMQmuTVF) |

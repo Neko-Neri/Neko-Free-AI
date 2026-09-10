@@ -572,14 +572,14 @@ const SITES_DATA = [
   },
   {
     id: 46,
-    name: "0168 AI",
-    category: "fast",
+    name: "0168云 (免费服务器)",
+    category: "featured",
     url: "https://0168.cn/recommend/J6U7hMQmuTVF",
-    baseUrl: "https://0168.cn/v1",
-    badge: "聚合直连",
-    badgeType: "hot",
-    tags: ["多模型聚合", "国内直连", "综合工作台", "注册送额"],
-    desc: "综合大模型聚合服务，国内高速免翻直连。",
-    freePerk: "注册领体验礼包，免翻直连顺畅"
+    baseUrl: "https://0168.cn",
+    badge: "送1个月主机",
+    badgeType: "free",
+    tags: ["免费云服务器", "送1个月", "算力部署", "白嫖服务器", "国内高速"],
+    desc: "高性价比云主机平台，适合搭建 Bot 与测试环境。",
+    freePerk: "通过专属链接注册，可免费体验 1 个月云服务器！"
   }
 ];
