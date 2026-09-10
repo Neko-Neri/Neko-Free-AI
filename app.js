@@ -30,6 +30,7 @@ const dom = {
   luckyModal: document.getElementById('lucky-modal'),
   toastContainer: document.getElementById('toast-container'),
   sakuraCanvas: document.getElementById('sakura-canvas'),
+  controlsPanel: document.getElementById('controls-panel'),
 };
 
 // 类别图标映射
