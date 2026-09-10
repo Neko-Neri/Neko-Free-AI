@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neko的AI白嫖指南 - 44+ 优质AI大模型API与免费额度导航</title>
+  <meta name="description" content="Neko的AI白嫖指南，汇集44+优质AI中转、大模型API、Claude 3.5、GPT-4o、编程Cursor与免费白嫖额度平台。">
+  <link rel="icon" type="image/webp" href="logo.webp">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 樱花飘落画布背景 -->
+  <canvas id="sakura-canvas"></canvas>
+
+  <!-- 霓虹光晕氛围球 -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <div class="app-container">
+    
+    <!-- 顶部导航栏 -->
+    <header class="top-nav">
+      <a href="#" class="nav-brand">
+        <img src="logo.webp" alt="Neko Logo" class="brand-mini-logo">
+        <span class="brand-text">Neko的AI白嫖指南</span>
+      </a>
+
+      <div class="nav-actions">
+        <button id="lucky-btn" class="nav-btn">
+          <span>🎲</span>
+          <span>手气不错</span>
+        </button>
+        <button id="client-guide-btn" class="nav-btn">
+          <span>📖</span>
+          <span>接入教程</span>
+        </button>
+        <button id="sakura-toggle-btn" class="nav-btn">
+          <span>🌸</span>
+          <span>樱花: 开</span>
+        </button>
+        <button id="theme-toggle-btn" class="nav-btn">
+          <span>🌙</span>
+          <span>模式</span>
+        </button>
+        <a href="https://github.com/Neko-Neri/Neko-Free-AI" target="_blank" rel="noopener noreferrer" class="nav-btn primary-btn">
+          <span>⭐️</span>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- 巨幕 Hero 区域 -->
+    <section class="hero-section">
+      <div class="logo-wrapper">
+        <img src="logo.webp" alt="Neko Mascot" class="main-logo">
+        <div class="logo-badge">在线领额度 🐾</div>
+      </div>
+      <h1 class="hero-title">Neko的AI白嫖指南</h1>
+      <p class="hero-subtitle">
+        精心甄选 <span class="highlight">44+</span> 优质 AI 免费额度与 API 中转站点 · 全系列主力大模型聚合 · 每日签到与新人白嫖福利一网打尽！
+      </p>
+
+      <!-- 快速统计条 -->
+      <div class="stats-strip">
+        <div class="stat-pill">
+          <span>📂 收录站点:</span>
+          <span class="stat-num">44 个</span>
+        </div>
+        <div class="stat-pill">
+          <span>⚡ 主流模型:</span>
+          <span class="stat-num">GPT-4o / Claude-3.5</span>
+        </div>
+        <div class="stat-pill">
+          <span>🎁 福利类型:</span>
+          <span class="stat-num">注册赠额 & 每日签到</span>
+        </div>
+        <div class="stat-pill">
+          <span>💻 适用工具:</span>
+          <span class="stat-num">Cursor / NextChat / Cherry</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 搜索与控制面板 -->
+    <section class="controls-panel" id="controls-panel">
+      <!-- 搜索框 -->
+      <div class="search-box-wrapper">
+        <span class="search-icon">🔍</span>
+        <input 
+          type="text" 
+          id="search-input" 
+          class="search-input" 
+          placeholder="搜索站点名称、标签、特点或支持的模型 (如 Claude、Cursor、签到、绘图... 按 Ctrl + K 快速定位)"
+          autocomplete="off"
+        >
+        <button id="search-clear-btn" class="search-clear-btn" title="清空搜索">✕</button>
+      </div>
+
+      <!-- 分类 Tabs -->
+      <div class="category-tabs" id="category-tabs">
+        <!-- JS 动态注入 -->
+      </div>
+
+      <!-- 热门标签云 -->
+      <div class="tags-cloud-wrapper">
+        <span class="tags-label">🏷️ 热门标签:</span>
+        <div id="tags-cloud" style="display: flex; gap: 8px; flex-wrap: wrap;">
+          <!-- JS 动态注入 -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 结果统计与重置 -->
+    <div class="result-status-bar">
+      <div id="result-count">正在载入站点...</div>
+      <button id="reset-filter-btn" class="reset-filter-btn">重置筛选条件</button>
+    </div>
+
+    <!-- 站点卡片网格 -->
+    <main class="cards-grid" id="cards-grid">
+      <!-- JS 动态渲染 44 个站点卡片 -->
+    </main>
+
+    <!-- 底部 Footer -->
+    <footer class="app-footer">
+      <div class="footer-links">
+        <a href="https://github.com/Neko-Neri/Neko-Free-AI" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub 仓库</a>
+        <span>·</span>
+        <a href="javascript:void(0)" onclick="triggerLuckyPick()" class="footer-link">随便抽一个</a>
+        <span>·</span>
+        <a href="javascript:void(0)" onclick="openModal(document.getElementById('guide-modal'))" class="footer-link">客户端配置指南</a>
+      </div>
+      <p style="margin-bottom: 8px;">
+        Made with 💖 by <strong>Neko-Neri</strong> · 本指南所有推广链接均已保留邀请码，感谢支持维护！
+      </p>
+      <p style="font-size: 0.8rem; color: var(--text-muted);">
+        声明：本站仅作第三方资源信息收录与整理，各站点服务规则与免费额度以对应平台最新公告为准。
+      </p>
+    </footer>
+
+  </div>
+
+  <!-- 接入教程弹窗 (Modal) -->
+  <div class="modal-overlay" id="guide-modal">
+    <div class="modal-window">
+      <div class="modal-header">
+        <div class="modal-title">
+          <span>📖</span>
+          <span>小白上手：如何把 API 接入常用客户端？</span>
+        </div>
+        <button class="modal-close-btn" title="关闭">✕</button>
+      </div>
+
+      <div class="modal-body">
+        <p style="font-size: 0.92rem; color: var(--text-secondary); margin-bottom: 16px;">
+          大部分 NewAPI / One-API 站点都遵循标准 OpenAI 接口规范。只需在对应站点注册获取 <strong style="color: var(--pink-primary);">API Key (令牌)</strong> 和 <strong style="color: var(--pink-primary);">Base URL (接口地址)</strong>，即可接入任意第三方客户端！
+        </p>
+
+        <!-- Step 1: NextChat / ChatGPT-Next-Web -->
+        <div class="client-step-card">
+          <div class="client-step-title">
+            <span>🐾 方案一：NextChat (ChatGPT-Next-Web)</span>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">
+            点击左下角设置 ⚙️ -> 找到 <strong>自定义接口设置</strong>：
+          </p>
+          <div class="code-box">
+            <span>接口地址 (Base URL): 站点域名/v1 (例如: https://api.xxx.com/v1)</span>
+          </div>
+          <div class="code-box" style="margin-top: 6px;">
+            <span>API Key: 填入在平台生成的 sk-xxxxxxxx 令牌</span>
+          </div>
+        </div>
+
+        <!-- Step 2: Cherry Studio -->
+        <div class="client-step-card">
+          <div class="client-step-title">
+            <span>🍒 方案二：Cherry Studio (全能桌面客户端)</span>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">
+            打开设置 -> 模型服务 -> 添加服务商选择 <strong>OpenAI</strong>：
+          </p>
+          <div class="code-box">
+            <span>API 域名: 填入站点 Base URL (如: https://api.catcat.top/v1)</span>
+          </div>
+          <div class="code-box" style="margin-top: 6px;">
+            <span>点击“管理模型” -> 添加或拉取支持的模型 (如 gpt-4o, claude-3-5-sonnet)</span>
+          </div>
+        </div>
+
+        <!-- Step 3: Cursor / VS Code -->
+        <div class="client-step-card">
+          <div class="client-step-title">
+            <span>💻 方案三：Cursor / VS Code (编程代码补全)</span>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">
+            Cursor Settings -> Models -> 开启 OpenAI API Key：
+          </p>
+          <div class="code-box">
+            <span>Override OpenAI Base URL: 填入站点 /v1 地址</span>
+          </div>
+          <div class="code-box" style="margin-top: 6px;">
+            <span>填入你生成的高额/免付费 API 密钥，保存后即可享受免费代码补全与 Agent</span>
+          </div>
+        </div>
+
+        <!-- Step 4: 免配置平台 -->
+        <div class="client-step-card">
+          <div class="client-step-title">
+            <span>💬 方案四：免配置平台 (SharedChat / NexusVAI / AnyModel 等)</span>
+          </div>
+          <p style="font-size: 0.85rem; color: var(--text-secondary);">
+            不想下载任何客户端？可以直接挑选本站分类为 <strong>“免配置直聊”</strong> 的站点，注册登录后在浏览器网页端直接开聊！
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- 抽签/手气不错弹窗 (Lucky Modal) -->
+  <div class="modal-overlay" id="lucky-modal">
+    <div class="modal-window" style="max-width: 540px;">
+      <div class="modal-header">
+        <div class="modal-title">
+          <span>🎲</span>
+          <span>Neko 的幸运盲盒抽签</span>
+        </div>
+        <button class="modal-close-btn" title="关闭">✕</button>
+      </div>
+      <div id="lucky-content">
+        <!-- JS 动态注入抽中结果 -->
+      </div>
+    </div>
+  </div>
+
+  <!-- 全局 Toast 容器 -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- 脚本加载 -->
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
