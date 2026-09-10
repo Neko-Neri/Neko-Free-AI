@@ -1,38 +1,4 @@
-# 🌸 Neko的AI白嫖指南 (Neko-Free-AI)
-
-<p align="center">
-  <img src="logo.webp" alt="Neko Mascot" width="160" style="border-radius: 50%; box-shadow: 0 0 25px rgba(255, 82, 140, 0.5);" />
-</p>
-
-<p align="center">
-  <strong>💖 精心整理 44+ 优质 AI 免费额度与 API 中转站点 · 全系列主力大模型聚合 · 每日签到与新人礼包一网打尽 💖</strong>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Online%20%26%20Updated-ff69b4?style=flat-square" alt="Status">
-  <img src="https://img.shields.io/badge/Sites-44%2B%20Platforms-ff1493?style=flat-square" alt="Sites">
-  <img src="https://img.shields.io/badge/Theme-Kawaii%20Pink%20Aesthetic-ff85a2?style=flat-square" alt="Theme">
-  <img src="https://img.shields.io/badge/License-MIT-ffb6c1?style=flat-square" alt="License">
-</p>
-
----
-
-## ✨ 项目特色
-
-- 🌸 **高级粉色美学**：采用暗夜霓虹粉（Dark Sakura）与甜美日光粉（Sweet Pastel）双主题，搭配柔和的浪漫落樱（Sakura Petals）动态粒子画布。
-- ⚡ **44+ 站点全量打标**：涵盖 API中转站、精选高额白嫖、编程与 Cursor 专精、Web 开箱即聊、二次元绘画（NovelAI）与跨境高速专线等 6 大分类。
-- 🔍 **全功能智能交互**：
-  - 即时搜索（站点名称、功能标签、支持模型如 `GPT-4o`、`Claude-3.5`、`Cursor`、`签到`）。
-  - 热门标签云快速联动筛选。
-  - 本地心愿收藏夹（LocalStorage 持久化）。
-  - 一键复制邀请注册链接 & 提取 API Base URL。
-  - 🎲 **手气不错 (抽签盲盒)**：随机推荐高福利站点。
-- 📖 **小白客户端配置教程**：弹窗内嵌 NextChat、Cherry Studio、Chatbox、Cursor / VS Code 的详细接入教程与 Base URL 示例。
-- 🚀 **开箱即用，零依赖**：基于现代原生 HTML5 + CSS3 + Vanilla JS 构建，直接双击或通过 GitHub Pages 一键上线。
-
----
-
-## 📂 站点导航总览 (44个精选站点)
+# 站点导航总览 (44个精选站点)
 
 | 序号 | 站点名称 | 分类 | 专属标签 | 白嫖福利亮点 | 专属链接 |
 | :---: | :--- | :---: | :--- | :--- | :--- |
@@ -80,38 +46,3 @@
 | 42 | **VCNO API** | 🌟 精选爆款 | `注册送额` `大额试用` `多节点负载` | 多节点智能负载，注册即送大额试用配额 | [前往注册](https://sub.vcnovb.cn/register?aff=7NU8CEFEK793) |
 | 43 | **辉辉云 API** | 🌐 高速直连 | `国内高速` `云边协同` `国内直连` | 国内网络环境下体验极佳的高速云端 API | [前往注册](https://api.huihuiyun.top/register?aff=MR452T4ETRCC) |
 | 44 | **AnyModel** | 🌟 精选爆款 | `全模型对比` `开源闭源齐聚` `Web免配置` | 全球开源与闭源顶流模型的一站式对比平台 | [前往注册](https://anymodel.org/?ref=UQZSWQY) |
-
----
-
-## 🛠️ 如何在本地运行
-
-1. 克隆本仓库到本地：
-```bash
-git clone https://github.com/Neko-Neri/Neko-Free-AI.git
-cd Neko-Free-AI
-```
-
-2. 本项目为纯静态页面，无需配置任何 Node.js 环境或复杂的构建依赖。直接使用任意浏览器打开 `index.html` 即可运行！
-
-3. 如果需要本地 HTTP 服务，可以使用 Python 快速启动：
-```bash
-python -m http.server 8000
-```
-然后在浏览器访问 `http://localhost:8000` 即可。
-
----
-
-## 🌐 开启 GitHub Pages 线上访问
-
-1. 进入 GitHub 仓库页面：`https://github.com/Neko-Neri/Neko-Free-AI`
-2. 点击仓库顶部的 **Settings (设置)**
-3. 在左侧菜单点击 **Pages**
-4. 在 **Build and deployment -> Branch** 中选择 `main` 分支，目录选择 `/ (root)`，点击 **Save**
-5. 等待 1~2 分钟，即可通过 `https://neko-neri.github.io/Neko-Free-AI/` 免费在线访问！
-
----
-
-## 💖 鸣谢与声明
-
-- 本项目由 **Neko-Neri** 维护，所有收录链接均带有推广邀请码，你的注册是对本指南持续维护与更新的最大支持！
-- 各站点的免费试用规则、模型价格及活动均归属于对应第三方平台，请合理合规使用。
