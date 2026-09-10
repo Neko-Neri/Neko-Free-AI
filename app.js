@@ -47,11 +47,17 @@ const CATEGORY_AVATARS = {
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
   initSakuraCanvas();
+  updateTotalSitesStat();
   renderCategoryTabs();
   renderTagsCloud();
   bindEvents();
   renderCards();
 });
+
+function updateTotalSitesStat() {
+  const el = document.getElementById('total-sites-num');
+  if (el) el.innerText = `${SITES_DATA.length} 个`;
+}
 
 // 主题初始化
 function initTheme() {

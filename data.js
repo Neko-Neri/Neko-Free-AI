@@ -1,7 +1,7 @@
 /**
  * Neko的AI白嫖指南 - 站点数据库
  * 整理日期: 2026
- * 包含44个优质AI大模型API中转、免费对话与白嫖额度站点
+ * 包含46个优质AI大模型API中转、免费对话与白嫖额度站点
  */
 
 const SITE_CATEGORIES = {
@@ -39,8 +39,8 @@ const SITES_DATA = [
     badge: "智能体专选",
     badgeType: "hot",
     tags: ["注册送额", "多模型聚合", "高并发", "Agent专供"],
-    desc: "专为智能体与自动化工作流量身打造的 API 网关，多模型聚合热备，路由响应毫秒级。",
-    freePerk: "新用户注册即送初始调用额度，支持全系列主力模型"
+    desc: "智能体专属网关，多模型热备，毫秒级路由。",
+    freePerk: "注册即送初始额度，支持全系主力模型"
   },
   {
     id: 2,
@@ -51,8 +51,8 @@ const SITES_DATA = [
     badge: "轻量极速",
     badgeType: "speed",
     tags: ["NewAPI", "轻量快速", "开发者友好", "国内直连"],
-    desc: "稳定轻量的 NewAPI 接口平台，极简界面管理，适合个人开发者日常接入与小项目调试。",
-    freePerk: "注册赠送免费测试 Token，直连不卡顿"
+    desc: "轻量稳定 NewAPI 平台，开箱即用，延迟低。",
+    freePerk: "注册送免费测试 Token"
   },
   {
     id: 3,
@@ -63,8 +63,8 @@ const SITES_DATA = [
     badge: "全球加速",
     badgeType: "speed",
     tags: ["全球加速", "企业级并发", "高可用", "多模型聚合"],
-    desc: "全球多节点边缘路由加速，企业级并发吞吐，专为高负载与自动化任务设计的大模型入口。",
-    freePerk: "注册赠送体验金，全球节点智能就近接入"
+    desc: "全球多节点路由加速，企业级高并发高可用。",
+    freePerk: "注册送体验金，全球节点智能就近接入"
   },
   {
     id: 4,
@@ -75,8 +75,8 @@ const SITES_DATA = [
     badge: "新人礼包",
     badgeType: "hot",
     tags: ["Token分发", "超低费率", "新人礼包", "注册送额"],
-    desc: "高性价比的 Token 分发与中转平台，按需划扣费率透明，新手起步毫无门槛。",
-    freePerk: "完成注册即送启动额度包，支持绑定主流客户端"
+    desc: "高性价比 Token 分发与中转，新手零门槛。",
+    freePerk: "注册即送启动额度包，绑定即用"
   },
   {
     id: 5,
@@ -87,8 +87,8 @@ const SITES_DATA = [
     badge: "口碑公益",
     badgeType: "free",
     tags: ["公益优选", "全模型支持", "性价比", "GPT-4o"],
-    desc: "国内口碑极佳的低价与公益性 API 站点，主力模型一应俱全，稳定性出众。",
-    freePerk: "注册即送新手配额，全系列主流大模型开箱即测"
+    desc: "高口碑平价与公益中转，主流大模型覆盖全。",
+    freePerk: "注册即送新手配额，全系列随心测"
   },
   {
     id: 6,
@@ -99,8 +99,8 @@ const SITES_DATA = [
     badge: "萌系稳定",
     badgeType: "cute",
     tags: ["萌系稳定", "Claude-3.5", "极速响应", "注册送额"],
-    desc: "猫系二次元萌感设计，后台通道稳定且响应极快，深度适配各种沉浸式翻译与客户端。",
-    freePerk: "新猫咪注册立享初始免费额度，Claude 3.5 丝滑调用"
+    desc: "萌系二次元中转站，响应极快，通道稳定。",
+    freePerk: "注册享初始免费额度，Claude 3.5 丝滑"
   },
   {
     id: 7,
@@ -111,8 +111,8 @@ const SITES_DATA = [
     badge: "安全高防",
     badgeType: "safe",
     tags: ["安全防护", "国内直连", "多协议", "稳定可靠"],
-    desc: "具备安全防护与国内高速直连专线的 API 服务，多重容灾备份，不用担心连接中断。",
-    freePerk: "注册赠送新手免费试用额度，国内网络直连低延迟"
+    desc: "高防安全防护与国内高速直连，稳定不掉线。",
+    freePerk: "注册送新手测试额度，直连低延迟"
   },
   {
     id: 8,
@@ -123,8 +123,8 @@ const SITES_DATA = [
     badge: "免配置直聊",
     badgeType: "web",
     tags: ["Web免配置", "ChatGPT共享", "多账号", "开箱即用"],
-    desc: "网页版大模型账号池共享平台，免去本地任何客户端配置，打开浏览器直接体验官方对话界面。",
-    freePerk: "注册即送免费体验次数，免自备 API Key 畅聊"
+    desc: "网页版大模型账号池共享，免客户端直接聊。",
+    freePerk: "注册送免费对话次数，免自备 Key"
   },
   {
     id: 9,
@@ -135,8 +135,8 @@ const SITES_DATA = [
     badge: "算法编程",
     badgeType: "code",
     tags: ["算法编程", "代码补全", "Cursor可用", "学术生态"],
-    desc: "由知名 OJ 生态衍生的高质量 AI 镜像服务，针对代码逻辑、算法竞赛与学术研究深度调优。",
-    freePerk: "注册送额度，代码调试与学术问答体验极佳"
+    desc: "算法竞赛与开发者专属高质量代码模型镜像。",
+    freePerk: "注册送额度，代码调试与学术优选"
   },
   {
     id: 10,
@@ -147,8 +147,8 @@ const SITES_DATA = [
     badge: "极低延迟",
     badgeType: "speed",
     tags: ["高并发", "GPT-4o", "Claude-3.5", "极速响应"],
-    desc: "名字低调实力超强的 API 中转站，全天候超低首字延迟，支持各种最新旗舰大模型。",
-    freePerk: "注册即可白嫖体验金，支持高并发并发调用"
+    desc: "超低延迟高并发，支持各种最新旗舰顶模。",
+    freePerk: "注册立享体验金，支持高并发并发调用"
   },
   {
     id: 11,
@@ -159,8 +159,8 @@ const SITES_DATA = [
     badge: "高校公益",
     badgeType: "free",
     tags: ["高校社区", "稳定长效", "公益赞助", "国内直连"],
-    desc: "高校技术社团与开发者社区联合维护的公益 API 站点，持续长效运营，良心厚道。",
-    freePerk: "长期提供公益免费测试额度，社群活跃互助"
+    desc: "高校社区联合维护的长效公益站，良心稳定。",
+    freePerk: "长期提供公益免费测试额度"
   },
   {
     id: 12,
@@ -171,8 +171,8 @@ const SITES_DATA = [
     badge: "多模态专区",
     badgeType: "safe",
     tags: ["多模态", "高防集群", "智能路由", "长文本"],
-    desc: "采用分布式高防集群架构，不仅支持纯文本模型，还深度支持 Vision 视觉分析与长文档理解。",
-    freePerk: "新用户注册享大额试用额度，支持图片解析"
+    desc: "分布式高防集群，支持 Vision 视觉与长文本。",
+    freePerk: "新用户注册享大额试用额度"
   },
   {
     id: 13,
@@ -183,8 +183,8 @@ const SITES_DATA = [
     badge: "代码神器",
     badgeType: "code",
     tags: ["Cursor可用", "编程助手", "代码生成", "Claude-3.5"],
-    desc: "专为 Cursor、VS Code Continue、Cline 等开发工具定制的高吞吐代码 API 供应商。",
-    freePerk: "注册即送额度，完美适配 Cursor 代码补全与 Agent"
+    desc: "Cursor 与 VS Code 专属高吞吐代码 API。",
+    freePerk: "注册送额度，完美适配 Cursor 补全"
   },
   {
     id: 14,
@@ -195,8 +195,8 @@ const SITES_DATA = [
     badge: "每日签到",
     badgeType: "hot",
     tags: ["每日签到", "注册送额", "全网低价", "超低费率"],
-    desc: "每日签到即可领额度的白嫖党大本营！长久运营，价格极低，深受白嫖玩家好评。",
-    freePerk: "注册即送初始额度 + 每天打卡签到免费领 Token"
+    desc: "每日签到领额度，长久运营，价格极低。",
+    freePerk: "注册送初始额度 + 每天签到免费领"
   },
   {
     id: 15,
@@ -207,8 +207,8 @@ const SITES_DATA = [
     badge: "纯白嫖站",
     badgeType: "free",
     tags: ["纯白嫖专区", "零门槛", "注册送额", "每日签到"],
-    desc: "专为零成本体验打造的 Free 镜像中转站，零门槛入门，无需任何复杂认证。",
-    freePerk: "注册输入邀请码立得大额免费额度，零成本直接起飞"
+    desc: "零门槛纯免费白嫖平台，免复杂认证直接用。",
+    freePerk: "输入邀请码立得大额免费额度"
   },
   {
     id: 16,
@@ -219,8 +219,8 @@ const SITES_DATA = [
     badge: "SOTA顶尖",
     badgeType: "speed",
     tags: ["SOTA顶模", "前沿推理", "科研首选", "Claude-3.5"],
-    desc: "聚焦全球 State-Of-The-Art 顶尖前沿大模型，推理速度快，适合对回复质量要求严苛的高级场景。",
-    freePerk: "注册送额体验顶尖 SOTA 思考与推理模型"
+    desc: "聚焦全球前沿顶模，深度推理与科研首选。",
+    freePerk: "注册送额体验顶尖 SOTA 推理模型"
   },
   {
     id: 17,
@@ -231,8 +231,8 @@ const SITES_DATA = [
     badge: "线路冗余",
     badgeType: "safe",
     tags: ["多线路负载", "稳定持久", "开箱即用", "国内直连"],
-    desc: "拥有完善的多线路负载均衡与容灾切换机制，拒绝断连，日常主力使用体验极其平稳。",
-    freePerk: "注册即可获赠使用额度，支持一键配置 NextChat"
+    desc: "多线路负载均衡，拒绝断连，日常主力超稳。",
+    freePerk: "注册获赠使用额度，一键配置"
   },
   {
     id: 18,
@@ -243,8 +243,8 @@ const SITES_DATA = [
     badge: "Agent适配",
     badgeType: "code",
     tags: ["Agent协作", "开发套件", "高并发", "多模型聚合"],
-    desc: "针对多智能体协同（Multi-Agent）、AutoGPT 等复杂架构深度优化的中转网络。",
-    freePerk: "注册立享开发者福利包，轻松驱动多智能体"
+    desc: "多智能体协同与复杂开发架构深度优化网关。",
+    freePerk: "注册立享开发者福利包"
   },
   {
     id: 19,
@@ -255,8 +255,8 @@ const SITES_DATA = [
     badge: "小白友好",
     badgeType: "free",
     tags: ["公益普惠", "新手友好", "NextChat适配", "国内直连"],
-    desc: "极简清爽的新手友好型中转站，配置说明清晰，复制 API 密钥填入客户端即可秒速使用。",
-    freePerk: "新手注册即领赠额，免翻墙顺畅连线"
+    desc: "极清新新手友好中转，填 Key 即可秒速开聊。",
+    freePerk: "新手注册即领赠额，免翻直连"
   },
   {
     id: 20,
@@ -267,8 +267,8 @@ const SITES_DATA = [
     badge: "全能工作台",
     badgeType: "web",
     tags: ["Web免配置", "网页直接聊", "多模型切换", "智能对话"],
-    desc: "现代化的在线 AI 对话工作台，免去任何客户端配置，注册后在网页端直接随心所欲畅聊。",
-    freePerk: "邀请链接直达注册，免客户端开箱即聊"
+    desc: "现代在线对话工作台，免本地配置，开箱即聊。",
+    freePerk: "邀请直达注册，免客户端开箱直接聊"
   },
   {
     id: 21,
@@ -279,8 +279,8 @@ const SITES_DATA = [
     badge: "VIP特权",
     badgeType: "hot",
     tags: ["VIP尊享", "超大带宽", "逆向官转", "长文本"],
-    desc: "提供超大带宽的专属 VIP 级通道，涵盖官转与精细逆向接口，保障高负载时刻依然丝滑响应。",
-    freePerk: "注册进入尊享通道，享受高优先级调用与初始赠额"
+    desc: "超大带宽 VIP 通道，涵盖官转与精细逆向接口。",
+    freePerk: "注册享高优先级通道与初始赠额"
   },
   {
     id: 22,
@@ -291,8 +291,8 @@ const SITES_DATA = [
     badge: "二次元生图",
     badgeType: "cute",
     tags: ["二次元绘图", "NovelAI专精", "动漫生图", "绘画"],
-    desc: "专注于 NovelAI 优质二次元动漫绘画的中转站点，画风惊艳唯美，支持各类二次元魔法咒语！",
-    freePerk: "注册获赠生图积分，二次元画师与萝莉控狂喜"
+    desc: "专注 NovelAI 二次元动漫绘图，画质惊艳细腻。",
+    freePerk: "注册送生图积分，动漫画师狂喜"
   },
   {
     id: 23,
@@ -303,8 +303,8 @@ const SITES_DATA = [
     badge: "现代交互",
     badgeType: "web",
     tags: ["Web免配置", "文档分析", "全能助手", "长文本"],
-    desc: "UI 设计极其惊艳的企业级对话平台，具备知识库问答、长文档分析以及代码编写等全能本领。",
-    freePerk: "输入专属邀请码注册，立享海量对话额度"
+    desc: "现代企业级对话助手，支持长文档与多模态分析。",
+    freePerk: "输入邀请码注册，立享丰富对话额度"
   },
   {
     id: 24,
@@ -315,8 +315,8 @@ const SITES_DATA = [
     badge: "福利爆仓",
     badgeType: "hot",
     tags: ["注册送额", "大额赠送", "海量Token", "福利爆仓"],
-    desc: "名副其实的 Token 投弹手！注册赠送的额度极为丰厚，活动多，是白嫖圈的必冲神站。",
-    freePerk: "注册输入邀请码立送大额体验礼包，真正吃到饱"
+    desc: "Token 投弹手！注册赠额丰厚，活动多超划算。",
+    freePerk: "注册送大额体验礼包，真正吃到饱"
   },
   {
     id: 25,
@@ -327,8 +327,8 @@ const SITES_DATA = [
     badge: "极客游戏",
     badgeType: "code",
     tags: ["极客专用", "游戏NPC", "低延迟", "多模型聚合"],
-    desc: "针对游戏 NPC 对话、剧情互动与极客轻应用优化，响应速度快，接口兼容性极强。",
-    freePerk: "注册赠送体验金，适合游戏剧情与互动剧本接入"
+    desc: "针对游戏 NPC、剧情互动优化的特色轻中转。",
+    freePerk: "注册送体验金，适合游戏与剧情脚本"
   },
   {
     id: 26,
@@ -339,8 +339,8 @@ const SITES_DATA = [
     badge: "中文工作台",
     badgeType: "web",
     tags: ["Web免配置", "一体化平台", "网页直接聊", "中文界面"],
-    desc: "本土化深度优化的 Web AI 工作台，自带精美交互体验，全方位支持各类流行顶尖模型。",
-    freePerk: "注册即送额度，网页端免配置即开即用"
+    desc: "本土化 Web AI 对话工作台，界面精美免配置。",
+    freePerk: "注册即送额度，免客户端开箱即用"
   },
   {
     id: 27,
@@ -351,8 +351,8 @@ const SITES_DATA = [
     badge: "极速响应",
     badgeType: "speed",
     tags: ["极简轻量", "分发稳定", "快速到账", "超低费率"],
-    desc: "轻量化 Token 分发节点，无冗余臃肿功能，直奔主题，快速生成 Key 即可调用。",
-    freePerk: "注册即领试用配额，轻量实用"
+    desc: "轻量 Token 分发节点，直奔主题，极速生成 Key。",
+    freePerk: "注册即领试用配额，轻量好用"
   },
   {
     id: 28,
@@ -363,8 +363,8 @@ const SITES_DATA = [
     badge: "跨境专线",
     badgeType: "speed",
     tags: ["海外加速", "跨境专线", "网络优化", "低抖动"],
-    desc: "采用专线网络直达海外大模型官方端点，极低网络抖动与丢包率，保证长文输出不中断。",
-    freePerk: "注册即送免费额度，体验专线极速下发"
+    desc: "专线直达官方端点，网络极低抖动，输出稳定。",
+    freePerk: "注册即送免费额度，体验专线加速"
   },
   {
     id: 29,
@@ -375,8 +375,8 @@ const SITES_DATA = [
     badge: "超平价代码",
     badgeType: "code",
     tags: ["超平价代码", "Cursor可用", "Claude-Code", "极速补全"],
-    desc: "专为代码狂人打造的超平价服务，代码模型调用费用低廉，全面兼容各类 IDE 辅助插件。",
-    freePerk: "新注册用户赠送代码测试额度，写代码丝般顺滑"
+    desc: "代码专精平价服务，完美适配各类 IDE 插件。",
+    freePerk: "注册送代码测试额度，写代码极丝滑"
   },
   {
     id: 30,
@@ -387,8 +387,8 @@ const SITES_DATA = [
     badge: "热备网关",
     badgeType: "safe",
     tags: ["聚合网关", "多渠道热备", "高可用", "高并发"],
-    desc: "高可用架构网关，后台配置多通道热备策略，单渠道波动自动秒切，稳定性行业领先。",
-    freePerk: "注册赠送大额额度，高并发调用不掉线"
+    desc: "多渠道热备容灾聚合网关，秒级自动故障切换。",
+    freePerk: "注册送大额额度，高并发不掉线"
   },
   {
     id: 31,
@@ -399,8 +399,8 @@ const SITES_DATA = [
     badge: "前沿UI",
     badgeType: "web",
     tags: ["Web免配置", "前沿UI", "创意灵感", "智能工作流"],
-    desc: "设计感爆棚的 AI 创作中心，专为设计师与文案策划打造，交互体验如同未来科技应用。",
-    freePerk: "注册即享专属免费使用点数，免装软件直接聊"
+    desc: "设计感爆棚的 AI 创作中心，视觉极具科技感。",
+    freePerk: "注册即享专属免费点数，直接开聊"
   },
   {
     id: 32,
@@ -411,8 +411,8 @@ const SITES_DATA = [
     badge: "企业级吞吐",
     badgeType: "speed",
     tags: ["企业级吞吐", "极速响应", "稳定输出", "GPT-4o"],
-    desc: "企业级吞吐能力的高性能 API 平台，支持超多并发，首字吐出速度快如闪电。",
-    freePerk: "注册即可白嫖体验金，适合批量并发调用测试"
+    desc: "企业级吞吐能力，首字延迟低，支持超多并发。",
+    freePerk: "注册即可白嫖高并发体验金"
   },
   {
     id: 33,
@@ -423,8 +423,8 @@ const SITES_DATA = [
     badge: "全能集齐",
     badgeType: "safe",
     tags: ["全主流覆盖", "长期稳定", "低门槛", "注册送额"],
-    desc: "集齐主流厂商大模型的全能型中转站点，支持各类热门生态工具与聊天客户端。",
-    freePerk: "注册送额度，全系列模型任意选用"
+    desc: "集齐主流厂商模型的全能中转，生态适配全面。",
+    freePerk: "注册送额度，主流模型任意选用"
   },
   {
     id: 34,
@@ -435,8 +435,8 @@ const SITES_DATA = [
     badge: "社区福利",
     badgeType: "hot",
     tags: ["社区互助", "新手礼包", "简易集成", "注册送额"],
-    desc: "带有浓厚社区互助色彩的赠额 API 平台，新手礼包厚道，集成说明简单详尽。",
-    freePerk: "注册赠送大份新人礼包，社区交流互助氛围浓厚"
+    desc: "社区互助氛围浓厚，新手礼包足，简单易集成。",
+    freePerk: "注册即赠丰厚新手礼包"
   },
   {
     id: 35,
@@ -447,8 +447,8 @@ const SITES_DATA = [
     badge: "大额奖励",
     badgeType: "hot",
     tags: ["下一代平台", "兑换码福利", "大额奖励", "注册送额"],
-    desc: "功能强大的下一代 Token 聚合分发站，经常发放丰厚兑换码与活动奖励，白嫖党乐园。",
-    freePerk: "注册即送充沛奖励，支持多种兑换与活动翻倍"
+    desc: "下一代 Token 分发站，常发兑换码与活动奖励。",
+    freePerk: "注册即送充沛奖励，兑换活动丰富"
   },
   {
     id: 36,
@@ -459,8 +459,8 @@ const SITES_DATA = [
     badge: "多模态语音",
     badgeType: "cute",
     tags: ["多模态", "语音交互", "低费率", "绘图"],
-    desc: "不仅支持常见的大语言模型，还包含语音合成与多模态绘图模型，费率非常亲民。",
-    freePerk: "注册赠送测试额度，多模态玩法任你探索"
+    desc: "支持语音、图像与文本的多模态性价比中转。",
+    freePerk: "注册送测试额度，多模态玩法齐备"
   },
   {
     id: 37,
@@ -471,8 +471,8 @@ const SITES_DATA = [
     badge: "并发优化",
     badgeType: "speed",
     tags: ["自动化适配", "并发优化", "高并发", "快速响应"],
-    desc: "专为自动化脚本、批处理任务与后台微服务优化的快速通道，稳定性值得信赖。",
-    freePerk: "注册即送免费额度，脚本批量调用好帮手"
+    desc: "专为脚本自动化与批处理优化的快速通道。",
+    freePerk: "注册送免费额度，自动化脚本首选"
   },
   {
     id: 38,
@@ -483,8 +483,8 @@ const SITES_DATA = [
     badge: "超长文本",
     badgeType: "safe",
     tags: ["长文本处理", "私有化稳定", "长文本", "Claude-3.5"],
-    desc: "擅长长文本上下文分析的高可用接口，适合小说创作、研报精读以及大部头代码分析。",
-    freePerk: "注册即送启动金，长文本解析不截断"
+    desc: "擅长长文本上下文分析，长篇创作不截断。",
+    freePerk: "注册即送启动金，长文档解析力强"
   },
   {
     id: 39,
@@ -495,8 +495,8 @@ const SITES_DATA = [
     badge: "工作流首选",
     badgeType: "code",
     tags: ["Dify工作流", "LangChain", "自动化引擎", "Cursor可用"],
-    desc: "与 Dify、FastGPT、LangChain 等工作流平台天作之合，专为构建 AI 应用定制。",
-    freePerk: "注册即领体验包，无缝嵌入各类 AI Agent 工作流"
+    desc: "对接 Dify、FastGPT 与 LangChain 工作流首选。",
+    freePerk: "注册即领体验包，无缝嵌入 Agent"
   },
   {
     id: 40,
@@ -507,8 +507,8 @@ const SITES_DATA = [
     badge: "开箱即聊",
     badgeType: "web",
     tags: ["Web免配置", "精美对话", "免配置", "即开即聊"],
-    desc: "极简优雅的在线 Web 聊天室，界面直观，适合不想折腾客户端配置的纯对话用户。",
-    freePerk: "邀请注册即送免费对话次数，免装任何客户端"
+    desc: "极简美观在线聊天室，免去一切本地配置。",
+    freePerk: "邀请注册即送免费对话次数"
   },
   {
     id: 41,
@@ -519,8 +519,8 @@ const SITES_DATA = [
     badge: "新人专属",
     badgeType: "speed",
     tags: ["新人专属", "快速上手", "轻量直连", "注册送额"],
-    desc: "轻巧实用的新手向 API 中转站，注册流程极短，一分钟内即可完成账号申请并拿到 Key。",
-    freePerk: "新人专享免费试用额度，快速上手无压力"
+    desc: "流程精简的新手向站点，一分钟拿 Key 上手。",
+    freePerk: "新人专享免费试用额度"
   },
   {
     id: 42,
@@ -531,8 +531,8 @@ const SITES_DATA = [
     badge: "大额试用",
     badgeType: "hot",
     tags: ["注册送额", "大额试用", "多节点负载", "超低费率"],
-    desc: "多节点智能负载的高质量中转平台，注册即赠大额免费试用配额，实惠耐用。",
-    freePerk: "注册立得丰厚体验额度，多节点并发负载均衡"
+    desc: "多节点智能负载，注册即送大额免费试用。",
+    freePerk: "注册立得丰厚试用额度"
   },
   {
     id: 43,
@@ -543,8 +543,8 @@ const SITES_DATA = [
     badge: "国内高速",
     badgeType: "speed",
     tags: ["国内高速", "云边协同", "国内直连", "新手友好"],
-    desc: "针对国内网络环境深度优化的云端 API 平台，免翻直连，延迟极低，小白也能轻松驾驭。",
-    freePerk: "注册送额度，全天候高速直连无阻碍"
+    desc: "国内网络极佳的高速云端 API，免翻直连超低延迟。",
+    freePerk: "注册送额度，全天候高速直连"
   },
   {
     id: 44,
@@ -555,7 +555,31 @@ const SITES_DATA = [
     badge: "全模型对比",
     badgeType: "web",
     tags: ["全模型对比", "开源闭源齐聚", "Web免配置", "多模型聚合"],
-    desc: "全球开源与闭源顶流模型的大聚合竞技场，同一页面直接横向对比各大模型的回答效果！",
-    freePerk: "免翻直连，注册即享多模型无缝比对体验"
+    desc: "全球开源与闭源顶模大聚合，同一页横向对比。",
+    freePerk: "免翻直连，注册享多模型比对"
+  },
+  {
+    id: 45,
+    name: "XXS API (小学生)",
+    category: "api",
+    url: "https://xxs.l.cd/sign-up?aff=yrJv",
+    baseUrl: "https://xxs.l.cd/v1",
+    badge: "轻量低价",
+    badgeType: "speed",
+    tags: ["NewAPI", "轻量快速", "超低费率", "注册送额"],
+    desc: "轻量高性价比 NewAPI 站点，响应快费率低。",
+    freePerk: "注册即送初始额度，费率超亲民"
+  },
+  {
+    id: 46,
+    name: "0168 AI",
+    category: "fast",
+    url: "https://0168.cn/recommend/J6U7hMQmuTVF",
+    baseUrl: "https://0168.cn/v1",
+    badge: "聚合直连",
+    badgeType: "hot",
+    tags: ["多模型聚合", "国内直连", "综合工作台", "注册送额"],
+    desc: "综合大模型聚合服务，国内高速免翻直连。",
+    freePerk: "注册领体验礼包，免翻直连顺畅"
   }
 ];
